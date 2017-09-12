@@ -1,0 +1,75 @@
+<!-- REGISTRATION FORM (Plugin popup)-->
+<!DOCTYPE html>
+<!-- saved from url=(0056)file:///C:/Users/student/Downloads/FormPlugin%20(3).html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+	<title>TrackIT</title>
+	<style type="text/css">
+			input
+			{
+				margin-left: 20px;
+		    }
+		    select 
+		    {
+		    	margin-left: 20px;
+		    }
+		    * 
+		    {
+		    	border-width: 3px;
+		    	border-color: #909090;
+		    }
+	</style>
+</head>
+
+<body style="color: white;">
+
+	<table style="background-color: #680000;" align="center" cellpadding="10px">
+		<tbody> 
+		    <form style="color: white;" action="http://localhost/final_track/registerInfo.php"; method ="POST">
+		        <tr>
+			        <td>Association:
+			        </td>
+					<td>
+						<select name="association" required>
+ 							<option value="StudentAssoc" id="user" size="25px"> Student </option>
+  							<option value="ParentAssoc" id="user" size="25px"> Parent/Guardian </option>
+  							<option value="FacultyAssoc" id="user" size="25px"> Faculty Member </option>
+  							<option value="NotStudentAssoc" id="user" size="25px"> University Staff </option>
+  							<option value="OtherAssoc" id="user" size="25px"> Others </option>
+						</select>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						Source: 
+					</td>
+					<td>
+						<select name="source" style="width: 100px;">
+ 						<option value="Indira Gandhi Delhi Technical University for Women(IGDTUW)"> Indira Gandhi Delhi Technical University for Women </option>
+ 						<option value="Scholarships"> Scholarships</option>
+ 						<option value="Result May 2017"> Results</option>
+						</select>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						Destnation:			
+					</td>
+					<td>
+						<select name="destination" style="width: 100px;">
+				 		<option value="Research and Consultancy"> Research</option>
+ 						<option value="Academic Calendar 2017-18"> Academic Calendar</option>
+ 						<option value="hostel"> Hostel</option>
+						</select>
+					</td>
+				</tr>
+				<tr>
+					<td></td>
+					<td align="left">
+						<input type="submit" name="Start" id="start" style="width: 80%;">
+					</td>
+				</tr>
+     		</form>
+		</tbody>
+	</table>
+</body>
+</html>
